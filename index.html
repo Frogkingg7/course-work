@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams - кондитерский магазин</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="img/logo.png">
+</head>
+<body>
+    <!-- Хедер сайта -->
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +994 (55) 555-55-55</span>
+                    <span><i class="fas fa-envelope"></i> info@sweetdreams.az</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Sweet Dreams Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cart">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Добро пожаловать в мир сладких удовольствий</h1>
+                <p>Изысканные кондитерские изделия ручной работы для любого случая</p>
+                <a href="catalog.html" class="btn btn-primary">Смотреть каталог</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные категории -->
+    <section class="popular-categories">
+        <div class="container">
+            <h2 class="section-title">Популярные категории</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="img/products/cakes.jpg" alt="Торты">
+                    <h3>Торты</h3>
+                    <a href="catalog.html?category=cakes" class="btn btn-secondary">Смотреть</a>
+                </div>
+                <div class="category-card">
+                    <img src="img/products/cupcakes.jpg" alt="Капкейки">
+                    <h3>Капкейки</h3>
+                    <a href="catalog.html?category=cupcakes" class="btn btn-secondary">Смотреть</a>
+                </div>
+                <div class="category-card">
+                    <img src="img/products/cookies.jpg" alt="Печенье">
+                    <h3>Печенье</h3>
+                    <a href="catalog.html?category=cookies" class="btn btn-secondary">Смотреть</a>
+                </div>
+                <div class="category-card">
+                    <img src="img/products/chocolate.jpg" alt="Шоколад">
+                    <h3>Шоколад</h3>
+                    <a href="catalog.html?category=chocolate" class="btn btn-secondary">Смотреть</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Новинки -->
+    <section class="new-products">
+        <div class="container">
+            <h2 class="section-title">Новинки</h2>
+            <div class="products-slider">
+                <div class="product-card">
+                    <div class="product-badge">Новинка</div>
+                    <img src="img/products/cake-1.jpg" alt="Торт Шоколадная фантазия">
+                    <h3>Торт "Шоколадная фантазия"</h3>
+                    <p class="product-price">17 ₼</p>
+                    <button class="btn btn-primary add-to-cart-btn" data-id="1">В корзину</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Новинка</div>
+                    <img src="img/products/cupcake-1.jpg" alt="Капкейк Ванильный">
+                    <h3>Капкейк "Ванильный"</h3>
+                    <p class="product-price">2.2 ₼</p>
+                    <button class="btn btn-primary add-to-cart-btn" data-id="2">В корзину</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Новинка</div>
+                    <img src="img/products/cookie-1.jpg" alt="Печенье Овсяное">
+                    <h3>Печенье "Овсяное с шоколадом"</h3>
+                    <p class="product-price">1.5 ₼</p>
+                    <button class="btn btn-primary add-to-cart-btn" data-id="3">В корзину</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Новинка</div>
+                    <img src="img/products/chocolate-1.jpg" alt="Шоколад Бельгийский">
+                    <h3>Шоколад "Бельгийский"</h3>
+                    <p class="product-price">3.4 ₼</p>
+                    <button class="btn btn-primary add-to-cart-btn" data-id="4">В корзину</button>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Спецпредложения -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="section-title">Спецпредложения</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>Скидка 20% на все торты</h3>
+                        <p>Только до конца недели!</p>
+                        <a href="catalog.html?category=cakes&discount=true" class="btn btn-accent">Подробнее</a>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h3>2 + 1 на все капкейки</h3>
+                        <p>Купи два, получи третий в подарок!</p>
+                        <a href="catalog.html?category=cupcakes&promo=true" class="btn btn-accent">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы клиентов -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Заказывала торт на день рождения дочери. Выполнили все пожелания! Вкус превзошел все ожидания!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/testimonials/author-1.jpg" alt="Анна">
+                        <div class="author-info">
+                            <h4>Анна</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Регулярно заказываю печенье и другие сладости для офиса. Всегда свежие и вкусные! Доставка всегда вовремя."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/testimonials/author-2.jpg" alt="Михаил">
+                        <div class="author-info">
+                            <h4>Михаил</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Капкейки просто восхитительные! Муж был в восторге от подарка на день рождения. Обязательно закажу еще!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/testimonials/author-3.jpg" alt="Елена">
+                        <div class="author-info">
+                            <h4>Елена</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="img/about/bakery.jpg" alt="Наша кондитерская">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">О нашей кондитерской</h2>
+                    <p>Sweet Dreams - это кондитерская с многолетним опытом, где мы создаем настоящие шедевры кондитерского искусства.</p>
+                    <p>Наши опытные кондитеры используют только натуральные ингредиенты и передовые технологии, чтобы ваши сладкие мечты стали реальностью.</p>
+                    <a href="about.html" class="btn btn-secondary">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка на новости -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Подпишитесь на наши новости</h2>
+                <p>Будьте в курсе новинок, акций и спецпредложений</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ваш e-mail" required>
+                    <button type="submit" class="btn btn-primary">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер сайта -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="Sweet Dreams Logo">
+                    </div>
+                    <p>Мы превращаем сладкие мечты в реальность!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Сумгаит ул. Кондитерская, д. 123</li>
+                        <li><i class="fas fa-phone"></i> +994 (55) 555-55-55</li>
+                        <li><i class="fas fa-envelope"></i> info@sweetdreams.ru</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Информация</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="policy.html">Политика конфиденциальности</a></li>
+                        <li><a href="terms.html">Условия использования</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Рабочие часы</h3>
+                    <ul class="working-hours">
+                        <li>Пн-Пт: 9:00 - 20:00</li>
+                        <li>Сб: 10:00 - 18:00</li>
+                        <li>Вс: 10:00 - 16:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Sweet Dreams. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

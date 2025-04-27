@@ -1,0 +1,33 @@
+/* Responsive стили для адаптивности */
+
+/* Для экранов меньше 1200px */
+@media (max-width: 1200px) {
+    .catalog-products .catalog-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  /* Для экранов меньше 768px */
+  @media (max-width: 768px) {
+    .catalog-filters .filters-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    /* Можно настроить уменьшение отступов для каталога */
+    .catalog-products .catalog-grid {
+      gap: 20px;
+    }
+  }
+  
+  /* Для экранов меньше 576px */
+  @media (max-width: 576px) {
+    .catalog-products .catalog-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .filters-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  

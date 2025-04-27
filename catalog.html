@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог продукции - Sweet Dreams</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Хедер (общий для всех страниц) -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container">
+        <div class="contact-info">
+          <span><i class="fas fa-phone"></i> +994 (55) 555-55-55</span>
+          <span><i class="fas fa-envelope"></i> info@sweetdreams.ru</span>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Sweet Dreams Logo">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html" class="active">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-cart">
+          <a href="cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Заголовок каталога -->
+  <section class="catalog-header">
+    <div class="container">
+      <h2 class="section-title">Каталог продукции</h2>
+    </div>
+  </section>
+
+  <!-- Фильтры каталога -->
+  <section class="catalog-filters">
+    <div class="container">
+      <form id="filter-form">
+        <div class="filters-grid">
+          <div class="filter-group">
+            <label for="category">Категория:</label>
+            <select id="category" name="category">
+              <option value="">Все</option>
+              <option value="cakes">Торты</option>
+              <option value="cupcakes">Капкейки</option>
+              <option value="cookies">Печенье</option>
+              <option value="chocolate">Шоколад</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="price-min">Цена от:</label>
+            <input type="number" id="price-min" name="priceMin" placeholder="0">
+          </div>
+          <div class="filter-group">
+            <label for="price-max">Цена до:</label>
+            <input type="number" id="price-max" name="priceMax" placeholder="5000">
+          </div>
+          <div class="filter-group">
+            <label for="sort">Сортировка:</label>
+            <select id="sort" name="sort">
+              <option value="default">По умолчанию</option>
+              <option value="price-asc">По возрастанию цены</option>
+              <option value="price-desc">По убыванию цены</option>
+            </select>
+          </div>
+        </div>
+        <div class="filters-actions">
+          <button type="submit" class="btn btn-primary">Применить фильтры</button>
+          <button type="reset" class="btn btn-secondary">Сбросить</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Сетка товаров -->
+  <section class="catalog-products">
+    <div class="container">
+      <div class="catalog-grid">
+        <!-- Пример карточки товара -->
+        <div class="product-card">
+          <img src="img/products/cake-1.jpg" alt="Торт Шоколадная фантазия">
+          <h3>Торт "Шоколадная фантазия"</h3>
+          <p class="product-price">1200 ₽</p>
+          <button class="btn btn-primary add-to-cart-btn" data-id="1">В корзину</button>
+        </div>
+        <!-- Дополнительные карточки товаров можно дублировать -->
+      </div>
+      <!-- Пагинация -->
+      <div class="pagination">
+        <span class="pagination-item active">1</span>
+        <span class="pagination-item">2</span>
+        <span class="pagination-item">3</span>
+        <span class="pagination-item">4</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер (общий для всех страниц) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="img/logo.png" alt="Sweet Dreams Logo">
+          </div>
+          <p>Мы превращаем сладкие мечты в реальность!</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Контакты</h3>
+          <ul class="contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> г. Сумгаит ул. Кондитерская, д. 123</li>
+            <li><i class="fas fa-phone"></i> +994 (55) 555-55-55</li>
+            <li><i class="fas fa-envelope"></i> info@sweetdreams.ru</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Информация</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <li><a href="policy.html">Политика конфиденциальности</a></li>
+            <li><a href="terms.html">Условия использования</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Рабочие часы</h3>
+          <ul class="working-hours">
+            <li>Пн-Пт: 9:00 - 20:00</li>
+            <li>Сб: 10:00 - 18:00</li>
+            <li>Вс: 10:00 - 16:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Sweet Dreams. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

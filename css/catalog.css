@@ -1,0 +1,78 @@
+/* Стили для страницы каталога */
+
+/* Заголовок каталога */
+.catalog-header {
+    background-color: var(--light-color);
+    padding: 50px 0;
+  }
+  
+  /* Фильтры каталога */
+  .catalog-filters {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+  }
+  
+  .filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .filter-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .filter-group select,
+  .filter-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+  }
+  
+  .filters-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Сетка товаров */
+  .catalog-products .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  /* Пагинация */
+  .catalog-products .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .catalog-products .pagination .pagination-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+  }
+  
+  .catalog-products .pagination .pagination-item:hover,
+  .catalog-products .pagination .pagination-item.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+  }
+  
